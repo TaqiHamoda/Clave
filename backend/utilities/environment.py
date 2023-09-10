@@ -43,7 +43,7 @@ class Environment:
     db_user: str = None
     db_password: str = None
     db_port: int = None
-    db_url: str = None
+    db_address: str = None
     db_timeout: float = None
     db_https_enabled: bool = None
 
@@ -95,7 +95,7 @@ class Environment:
             self.db_user = env_local["database"]["user"]
             self.db_password = env_local["database"]["password"]
             self.db_port = env_local["database"]["port"]
-            self.db_url = env_local["database"]["url"]
+            self.db_address = env_local["database"]["url"]
             self.db_timeout = env_local["database"]["timeout"]
             self.db_https_enabled = env_local["database"]["https_enabled"]
 

@@ -27,7 +27,7 @@ def initializeDB() -> None:
         user=ENV.db_user,
         password=ENV.db_password,
         port=ENV.db_port,
-        url=ENV.db_url,
+        url=ENV.db_address,
         timeout=ENV.db_timeout,
         https=ENV.db_https_enabled
     )
