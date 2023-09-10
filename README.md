@@ -1,6 +1,6 @@
 # Clave
 
-Clave (pronounced `klah-vey`, after the instrument)is an open source robot management system that provides the tools needed to remotely conduct experiments and collect data in an effecient manner.
+Clave (pronounced `klah-vey`, after the instrument) is an open source robot management system that provides the tools needed to remotely conduct experiments and collect data in an effecient manner.
 
 # Installation
 Clave currently only officially supports linux. However, the project could be migrated to another OS such as Windows or MacOs
