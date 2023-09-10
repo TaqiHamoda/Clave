@@ -1,0 +1,8 @@
+README.md
+setup.py
+opencr_modules/device.py
+opencr_modules/simulator.py
+opencr_modules.egg-info/PKG-INFO
+opencr_modules.egg-info/SOURCES.txt
+opencr_modules.egg-info/dependency_links.txt
+opencr_modules.egg-info/top_level.txt

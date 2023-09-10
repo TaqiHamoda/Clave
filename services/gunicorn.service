@@ -1,0 +1,13 @@
+[Unit]
+Description=gunicorn daemon
+After=network.target
+
+[Service]
+User=www-data
+Group=www-data
+WorkingDirectory=$INSTALL_DIR
+
+ExecStart=/usr/local/bin/gunicorn --access-logfile - --workers 3 --bind unix:$INSTALL_DIR/application.sock server:app
+
+[Install]
+WantedBy=multi-user.target

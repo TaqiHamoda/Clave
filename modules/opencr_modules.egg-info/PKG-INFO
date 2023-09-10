@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: opencr-modules
+Version: 0.1a0
+Summary: The template package for Open-CR Modules.
+Home-page: https://mcsscm.utm.utoronto.ca/hamodata/open-cr
+Author: Taqi Hamoda
+Author-email: t.hamoda@mail.utoronto.ca
+License: GPL 3
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GPL 3 License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4

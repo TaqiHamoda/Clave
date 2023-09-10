@@ -1,0 +1,30 @@
+{
+  "short_name": "Open-CR",
+  "name": "Open-CR Graphics",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "128x128 64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "Open-CR-Logo.png",
+      "type": "image/png",
+      "sizes": "128x128 256x256 512x512 1024x1024"
+    },
+    {
+      "src": "Open-CR-Icon.png",
+      "type": "image/png",
+      "sizes": "128x128 256x256 512x512 1024x1024"
+    },
+    {
+      "src": "Open-CR-Full.png",
+      "type": "image/png",
+      "sizes": "128x128 256x256 512x512 1024x1024"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

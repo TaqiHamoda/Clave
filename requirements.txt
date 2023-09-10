@@ -1,0 +1,8 @@
+# TODO: Add the versions
+flask-cors
+Flask-Session
+gunicorn
+requests
+cryptography
+setuptools
+typing-extensions

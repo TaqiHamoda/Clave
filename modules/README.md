@@ -1,0 +1,1 @@
+To install on machine run: `pip install .`

@@ -1,0 +1,99 @@
+{
+    "name": "Franka Emika Panda",
+    "description": "A Panda mockup to test Open-CR functionality and to be familiar with the platform.",
+    "image": "franka.jpg",
+    "state": { },
+    "settings": { },
+    "report": {
+        "base": {
+            "Time": {
+                "type": "number",
+                "unit": "milliseconds",
+                "description": "Time",
+                "independent": true
+            },
+            "Actuator 1": {
+                "type": "number",
+                "unit": "millimeters",
+                "description": "Pull the first actuator"
+            },
+            "Actuator 2": {
+                "type": "number",
+                "unit": "millimeters",
+                "description": "Pull the second actuator"
+            },
+            "Actuator 3": {
+                "type": "number",
+                "unit": "millimeters",
+                "description": "Pull the third actuator"
+            },
+            "Actuator 4": {
+                "type": "number",
+                "unit": "millimeters",
+                "description": "Pull the fourth actuator"
+            },
+            "Actuator 5": {
+                "type": "number",
+                "unit": "millimeters",
+                "description": "Pull the fifth actuator"
+            },
+            "Actuator 6": {
+                "type": "number",
+                "unit": "millimeters",
+                "description": "Pull the sizth actuator"
+            },
+            "Actuator 7": {
+                "type": "number",
+                "unit": "millimeters",
+                "description": "Pull the seventh actuator"
+            }
+        },
+        "carriage": { }
+    },
+    "experiment": {
+        "base": {
+            "Experiment Runtime": {
+                "type": "integer",
+                "unit": "seconds",
+                "description": "How many seconds should the experiment run for?"
+            },
+            "Actuator 1": {
+                "type": "number",
+                "unit": "millimeters",
+                "description": "Pull the first actuator"
+            },
+            "Actuator 2": {
+                "type": "number",
+                "unit": "millimeters",
+                "description": "Pull the second actuator"
+            },
+            "Actuator 3": {
+                "type": "number",
+                "unit": "millimeters",
+                "description": "Pull the third actuator"
+            },
+            "Actuator 4": {
+                "type": "number",
+                "unit": "millimeters",
+                "description": "Pull the fourth actuator"
+            },
+            "Actuator 5": {
+                "type": "number",
+                "unit": "millimeters",
+                "description": "Pull the fifth actuator"
+            },
+            "Actuator 6": {
+                "type": "number",
+                "unit": "millimeters",
+                "description": "Pull the sizth actuator"
+            },
+            "Actuator 7": {
+                "type": "number",
+                "unit": "millimeters",
+                "description": "Pull the seventh actuator"
+            }
+        },
+        "carriage": { }
+    },
+    "commands": { }
+}

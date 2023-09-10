@@ -1,0 +1,209 @@
+{
+    "name": "TDCR Mockup",
+    "description": "A TDCR mockup to test Open-CR functionality and to be familiar with the platform.",
+    "image": "crl-tdcr.jpg",
+    "state": {
+        "Sleep Status": {
+            "Will Sleep": {
+                "type": "boolean",
+                "description": "Will the simulator go to sleep in the future?"
+            },
+            "Duration": {
+                "type": "integer",
+                "unit": "seconds",
+                "description": "How many seconds to sleep for?",
+                "min": 0
+            },
+            "Frequency": {
+                "type": "integer",
+                "unit": "seconds",
+                "description": "How many seconds between every nap? If zero, then only sleep once.",
+                "min": 0
+            }
+        },
+        "Carriages": {
+            "Alpha Values": {
+                "type": "list",
+                "description": "The current alpha values of the carriages.",
+                "value": "number",
+                "unit": "degrees"
+            },
+            "Beta Values": {
+                "type": "list",
+                "description": "The current beta values of the carriages.",
+                "value": "number",
+                "unit": "millimeters"
+            }
+        },
+        "Thetas": {
+            "Theta Values": {
+                "type": "list",
+                "description": "The current theta values of the base.",
+                "value": "number",
+                "unit": "millimeters"
+            }
+        }
+    },
+    "settings": {
+        "Experiment Settings": {
+            "Max Experiment Run-Time": {
+                "type": "integer",
+                "unit": "seconds",
+                "description": "The upper limit for how long an experiment should take.",
+                "min": 1
+            },
+            "Probability of Failure": {
+                "type": "number",
+                "unit": "%",
+                "description": "What is the probability that any given experiment will fail?",
+                "min": 0,
+                "max": 100,
+                "step": 0.1
+            }
+        },
+        "Simulator Settings": {
+            "Error Period": {
+                "type": "integer",
+                "unit": "seconds",
+                "description": "How often should the simulator produce a random error? If answer is 0, no errors will be produced.",
+                "min": 0
+            },
+            "Warning Period": {
+                "type": "integer",
+                "unit": "seconds",
+                "description": "How often should the simulator produce a random warning? If answer is 0, no warnings will be produced.",
+                "min": 0
+            },
+            "Number of Carriages": {
+                "type": "integer",
+                "unit": "carriages",
+                "description": "How many carriages to move?",
+                "min": 1
+            }
+        }
+    },
+    "report": {
+        "base": {
+            "Theta 1": {
+                "type": "number",
+                "unit": "millimeters",
+                "description": "Pull the first tendon"
+            },
+            "Theta 2": {
+                "type": "number",
+                "unit": "millimeters",
+                "description": "Pull the second tendon"
+            },
+            "Theta 3": {
+                "type": "number",
+                "unit": "millimeters",
+                "description": "Pull the third tendon"
+            },
+            "Expected Theta 1": {
+                "type": "number",
+                "unit": "millimeters",
+                "description": "Expected value for first tendon"
+            },
+            "Expected Theta 2": {
+                "type": "number",
+                "unit": "millimeters",
+                "description": "Expected value for second tendon"
+            },
+            "Expected Theta 3": {
+                "type": "number",
+                "unit": "millimeters",
+                "description": "Expected value for third tendon"
+            }
+        },
+        "carriage": {
+            "_index": {
+                "type": "integer",
+                "description": "Which carriage the reported value is for?"
+            },
+            "Alpha": {
+                "type": "number",
+                "unit": "degrees",
+                "description": "Rotates the concentric tube"
+            },
+            "Beta": {
+                "type": "number",
+                "unit": "millimeters",
+                "description": "Translates the concentric tube"
+            },
+            "Expected Alpha": {
+                "type": "number",
+                "unit": "degrees",
+                "description": "Expected Alpha value based on motion profile"
+            },
+            "Expected Beta": {
+                "type": "number",
+                "unit": "millimeters",
+                "description": "Expected Beta value based on motion profile"
+            }
+        }
+    },
+    "experiment": {
+        "base": {
+            "Recalibrate Beforehand": {
+                "type": "boolean",
+                "description": "Should the Simulator calibrate itself beforehand?"
+            },
+            "Motion Profile": {
+                "type": "enumeration",
+                "description": "Which motion profile should the simulator use as it is moving the segments?",
+                "value": "text",
+                "values": ["Third Order Polynomial", "Fifth Order Polynomial"],
+                "multiple": false
+            },
+            "Theta 1": {
+                "type": "number",
+                "unit": "millimeters",
+                "description": "Pull the first tendon"
+            },
+            "Theta 2": {
+                "type": "number",
+                "unit": "millimeters",
+                "description": "Pull the second tendon"
+            },
+            "Theta 3": {
+                "type": "number",
+                "unit": "millimeters",
+                "description": "Pull the third tendon"
+            }
+        },
+        "carriage": {
+            "_index": {
+                "type": "integer",
+                "description": "Which carriage the reported value is for?"
+            },
+            "Alpha": {
+                "type": "number",
+                "unit": "degrees",
+                "description": "Rotates the concentric tube"
+            },
+            "Beta": {
+                "type": "number",
+                "unit": "millimeters",
+                "description": "Translates the concentric tube"
+            }
+        }
+    },
+    "commands": {
+        "Move Carriages to End": {},
+        "Sleep": {
+            "Duration": {
+                "type": "integer",
+                "unit": "seconds",
+                "description": "How many seconds to sleep for?",
+                "min": 0
+            },
+            "Frequency": {
+                "type": "integer",
+                "unit": "seconds",
+                "description": "How many seconds between every nap? If zero, then only sleep once.",
+                "min": 0
+            }
+        },
+        "Wake-Up": {}
+    }
+}
