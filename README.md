@@ -3,12 +3,12 @@
 Clave (pronounced `klah-vey`, after the instrument) is an open source robot management system that provides the tools needed to remotely conduct experiments and collect data in an effecient manner.
 
 <p float="left">
-    <img src="images/login.png" width="500"/>
-    <img src="images/home.png" width="500"/>
-    <img src="images/module.png" width="500"/>
-    <img src="images/settings.png" width="500"/>
-    <img src="images/reports.png" width="500"/>
-    <img src="images/report.png" width="500"/>
+    <img src="images/login.png" width="300"/>
+    <img src="images/home.png" width="300"/>
+    <img src="images/module.png" width="300"/>
+    <img src="images/settings.png" width="300"/>
+    <img src="images/reports.png" width="300"/>
+    <img src="images/report.png" width="300"/>
 </p>
 
 # Installation
