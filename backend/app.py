@@ -122,6 +122,11 @@ def initializeServer() -> Flask:
     if not os.path.exists(os.path.dirname(ENV.log_file_path)):
         os.mkdir(os.path.dirname(ENV.log_file_path))
 
+    initializeDB()
+    initializeAdminUser()
+    loadAndRunModules()
+    updateModulesDB()
+
     # Setting up Session Settings    
     app: Flask = Flask(__name__)
     
@@ -145,10 +150,10 @@ def initializeServer() -> Flask:
         app.register_blueprint(service_blueprint)
 
     # Methods to run before the first request to the server
-    app.before_first_request(initializeDB)
-    app.before_first_request(initializeAdminUser)
-    app.before_first_request(loadAndRunModules)
-    app.before_first_request(updateModulesDB)
+    # app.before_first_request(initializeDB)
+    # app.before_first_request(initializeAdminUser)
+    # app.before_first_request(loadAndRunModules)
+    # app.before_first_request(updateModulesDB)
 
     return app
 
