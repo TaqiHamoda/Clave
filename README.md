@@ -12,6 +12,9 @@ Clave (pronounced `klah-vey`, after the instrument) is an open source robot mana
 </p>
 
 # Installation
+
+**Please note that Clave is still in its beta stage. Install at your own risk.**
+
 Clave currently only officially supports linux. However, the project could be migrated to another OS such as Windows or MacOs
 
 ## Dependencies
